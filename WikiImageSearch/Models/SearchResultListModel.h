@@ -11,6 +11,4 @@
 
 @interface SearchResultListModel : NSObject <IListModel>
 
-@property (nonatomic, strong) NSArray* wikiRecords;
-
 @end

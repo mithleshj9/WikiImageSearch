@@ -51,7 +51,7 @@
     }
     
     self.searchText = searchText;
-    ((SearchResultListModel*)self.listModel).wikiRecords = nil;
+    self.listModel.records = nil;
     [self cancelCurrentDownloads];
     
     WikiSearchApiRequestManager *rm = [[WikiSearchApiRequestManager alloc] init];
@@ -68,7 +68,7 @@
              }
              
              if ([self.searchText isEqualToString:searchText]) {
-                 ((SearchResultListModel*)self.listModel).wikiRecords = [wikiRecords copy];
+                 self.listModel.records = [wikiRecords copy];
                  self.status = eSearchControllerStatusIdle;
                  [self.modelObserver datasetUpdated];
              }
@@ -76,7 +76,7 @@
          } else {
              if ([self.searchText isEqualToString:searchText]) {
                  self.status = eSearchControllerStatusIdle;
-                 ((SearchResultListModel*)self.listModel).wikiRecords = nil;
+                 self.listModel.records = nil;
                  [self.modelObserver datasetUpdationFailedWithError:error];
              }
          }
@@ -114,7 +114,7 @@
             iconDownloader = [[ImageDownloader alloc] init];
             [iconDownloader setCompletionHandler:^(UIImage *image, NSError *error){
                 if (image != nil) {
-                    WikiRecord *model =  ((SearchResultListModel*)self.listModel).wikiRecords[indexPath.row];
+                    WikiRecord *model =  self.listModel.records[indexPath.row];
                     model.thumbnail.icon = image;
                     [[self modelObserver] iconLoadedAtIndexpath:indexPath];
                 } else {

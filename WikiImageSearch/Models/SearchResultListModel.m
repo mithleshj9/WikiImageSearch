@@ -12,43 +12,45 @@
 
 @implementation SearchResultListModel
 
+@synthesize records;
+
 - (NSInteger) numberOfSections {
     return 1;
 }
 
 - (NSInteger) numberOfRecordsInSection:(NSInteger)section {
-    return self.wikiRecords.count;
+    return self.records.count;
 }
 
 - (NSString *) titleForDataAtIndexPath:(NSIndexPath*)indexPath {
-    if (indexPath.row >= self.wikiRecords.count)
+    if (indexPath.row >= self.records.count)
         return nil;
     
-    WikiRecord *record = self.wikiRecords[indexPath.row];
+    WikiRecord *record = self.records[indexPath.row];
     return record.title;
 }
 
 - (NSString*) modelIdentifierAtIndexPath:(NSIndexPath*)indexPath {
-    if (indexPath.row >= self.wikiRecords.count)
+    if (indexPath.row >= self.records.count)
         return nil;
     
-    WikiRecord *record = self.wikiRecords[indexPath.row];
+    WikiRecord *record = self.records[indexPath.row];
     return record.identifier;
 }
 
 
 - (UIImage*) iconAtIndex:(NSIndexPath*)indexPath {
-    if (indexPath.row >= self.wikiRecords.count)
+    if (indexPath.row >= self.records.count)
         return nil;
-    WikiRecord *record = self.wikiRecords[indexPath.row];
+    WikiRecord *record = self.records[indexPath.row];
     return record.thumbnail.icon;
     
 }
 
 - (NSString*) urlStringForIconAtIndexPath:(NSIndexPath*)indexPath {
-    if (indexPath.row >= self.wikiRecords.count)
+    if (indexPath.row >= self.records.count)
         return nil;
-    WikiRecord *record = self.wikiRecords[indexPath.row];
+    WikiRecord *record = self.records[indexPath.row];
     return record.thumbnail.iconURLString;
 }
 

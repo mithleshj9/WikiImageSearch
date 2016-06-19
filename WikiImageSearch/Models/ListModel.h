@@ -10,6 +10,8 @@
 
 @protocol IListModel <NSObject>
 
+@property (nonatomic, strong) NSArray* records;
+
 @required
 - (NSInteger) numberOfSections;
 - (NSInteger) numberOfRecordsInSection:(NSInteger)section;
