@@ -1,0 +1,17 @@
+//
+//  WikiImageSearch.pch
+//  WikiImageSearch
+//
+//  Created by Mithlesh Jha on 18/06/16.
+//  Copyright © 2016 Mithlesh Jha. All rights reserved.
+//
+
+#ifndef WikiImageSearch_pch
+#define WikiImageSearch_pch
+
+#ifdef __OBJC__
+@import Foundation;
+@import UIKit;
+#endif
+
+#endif /* WikiImageSearch_pch */
