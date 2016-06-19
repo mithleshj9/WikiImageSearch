@@ -8,7 +8,7 @@
 
 #import "IconsListViewController.h"
 #import "ControllerFactory.h"
-#import "ListModel.h"
+#import "IListModel.h"
 #import "Utils.h"
 
 

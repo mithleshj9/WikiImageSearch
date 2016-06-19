@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ListModel.h"
+#import "IListModel.h"
 
 @interface SearchResultListModel : NSObject <IListModel>
 

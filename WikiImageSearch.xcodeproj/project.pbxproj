@@ -61,6 +61,7 @@
 		2FD68A461D1684000055B305 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 		2FD68A481D16D4DE0055B305 /* ImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDownloader.h; sourceTree = "<group>"; };
 		2FD68A491D16D4DE0055B305 /* ImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDownloader.m; sourceTree = "<group>"; };
+		2FD68A4B1D16FC120055B305 /* IListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IListModel.h; sourceTree = "<group>"; };
 		2FE95BE71D15702100D547AB /* WikiRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WikiRecord.h; sourceTree = "<group>"; };
 		2FE95BE81D15702100D547AB /* WikiRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WikiRecord.m; sourceTree = "<group>"; };
 		2FE95BEA1D15718E00D547AB /* WikiImageSearch.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WikiImageSearch.pch; sourceTree = "<group>"; };
@@ -68,7 +69,6 @@
 		2FE95BED1D1573A200D547AB /* WikiSearchResultsListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WikiSearchResultsListController.m; sourceTree = "<group>"; };
 		2FE95BEF1D1575C000D547AB /* SearchResultListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultListModel.h; sourceTree = "<group>"; };
 		2FE95BF01D1575C000D547AB /* SearchResultListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultListModel.m; sourceTree = "<group>"; };
-		2FE95BF21D15767000D547AB /* ListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListModel.h; sourceTree = "<group>"; };
 		2FE95BF51D157FC700D547AB /* ControllerProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerProtocols.h; sourceTree = "<group>"; };
 		2FE95BF61D15801900D547AB /* ControllerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerFactory.h; sourceTree = "<group>"; };
 		2FE95BF71D15801900D547AB /* ControllerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControllerFactory.m; sourceTree = "<group>"; };
@@ -165,7 +165,7 @@
 		2F31B5501D1544D700A02319 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				2FE95BF21D15767000D547AB /* ListModel.h */,
+				2FD68A4B1D16FC120055B305 /* IListModel.h */,
 				2FE95BEF1D1575C000D547AB /* SearchResultListModel.h */,
 				2FE95BF01D1575C000D547AB /* SearchResultListModel.m */,
 				2FE95BE71D15702100D547AB /* WikiRecord.h */,
